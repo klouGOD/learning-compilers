@@ -4,7 +4,7 @@ PROJECT(test-compiler)
 # Todos os diretórios
 INCLUDE_DIRECTORIES(src)
 INCLUDE_DIRECTORIES(include)
-INCLUDE_DIRECTORIES(third-party)
+INCLUDE_DIRECTORIES(external)
 
 # Cria uma lista chamada SRC
 # com todos os arquivos .cpp de dentro da pasta src
@@ -29,7 +29,7 @@ TARGET_LINK_LIBRARIES(test-compiler core)
 
 enable_testing()
 
-add_subdirectory(third-party/googletest)
+add_subdirectory(external/googletest)
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 include_directories(${gmock_SOURCE_DIR}/include ${gmock_SOURCE_DIR})
