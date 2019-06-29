@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# Cmake build
+build/*
+cmake-build-debug/*
+
+# Dolphin file
+.directory
+
+# VsCode folder
+.vscode/*
