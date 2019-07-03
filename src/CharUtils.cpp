@@ -23,9 +23,8 @@ bool CharUtils::isFirstIdentifier(char character)
 
 bool CharUtils::isIdentifier(char character)
 {
-  return character == '_' || std::isalpha(character) || std::isdigit(character);
+  return character == '-' || character == '_' || std::isalpha(character) || std::isdigit(character);
 };
-
 
 bool CharUtils::isWhiteSpace(char character)
 {

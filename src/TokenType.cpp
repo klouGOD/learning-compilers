@@ -24,6 +24,8 @@ std::string TokenType::stringifyTokenType(TokenType::Type type)
     case Type::LT: return "LT";
     case Type::LTE: return "LTE";
     case Type::EQ: return "EQ";
+    // Assign op.
+    case Type::ASSIGN: return "ASSIGN";
     // Parentheses.
     case Type::LEFTPARENTHESIS: return "LEFTPARENTHESIS";
     case Type::RIGHTPARENTHESIS: return "RIGHTPARENTHESIS";
