@@ -18,7 +18,7 @@ TEST() {
 
 RUN() {
     cd build
-    ./test-compiler
+    ./test-compiler ../sample.klg
     cd ..
 }
 
